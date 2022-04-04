@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Caixa Eletrônico</title>
+</head>
+
+<body>
+
+    <img src="img/bg.jpg">
+    <div id="principal">
+        <div class="tela-caixa">
+            <ul>
+                <li><button class="btn1" onclick="ver_saldo()">SALDO</button></li>
+                <li><button class="btn1" onclick="fazer_deposito()">DEPÓSITO</button></li>
+                <li><button class="btn1" onclick="fazer_saque()">SAQUE</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn2" onclick="extrato()">EXTRATO</button></li>
+                <li><button class="btn2" onclick="transferencia()">TRANSFERÊNCIA</button></li>
+                <li><button class="btn2" onclick="sair()">SAIR</button></li>
+            </ul>
+            <p class="sc"><span id="sc1"></span></p>
+            <form id="user" action="">
+                <p class="form">USER</p><input type="text" id="name" name="name">
+                <br><br>
+                <p class="form">PASSWORD</p><input type="password" id="password" name="name">
+                <label onclick="login()" for="name">ENTRAR</label>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

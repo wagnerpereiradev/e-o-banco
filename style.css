@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'SF Thin';
+    src: url(fonts/SF-Pro-Text-Thin.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Light';
+    src: url(fonts/SF-Pro-Text-Light.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF';
+    src: url(fonts/SF-Pro-Text-Regular.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Medium';
+    src: url(fonts/SF-Pro-Text-Medium.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Bold';
+    src: url(fonts/SF-Pro-Text-Bold.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Heavy';
+    src: url(fonts/SF-Pro-Text-Heavy.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Black';
+    src: url(fonts/SF-Pro-Text-Black.otf) format('openType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: black;
+    overflow-y: hidden;
+}
+
+img {
+    filter: saturate(180%) blur(2.5px) grayscale(100%);
+    opacity: 50%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+#principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tela-caixa {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#join {
+    position: absolute;
+    left: 50px;
+}
+
+button {
+    position: relative;
+    top: 150px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #01ff5f;
+    box-shadow: 0px 0px 30px #01ff5f50;
+    font-family: 'SF';
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+}
+
+button:hover {
+    color: black;
+    border: 2px solid #01ff5f;
+    background-color: #01ff5f;
+    box-shadow: 0px 0px 30px #01ff5f50;
+}
+
+.tela-caixa ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.tela-caixa ul li {
+    color: white;
+}
+
+.sc {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: 'SF Medium';
+    font-size: 25px;
+    text-align: center;
+    width: 500px;
+    height: 70px;
+    background-color: #01ff5f;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+::selection {
+    background-color: black;
+    color: #01ff5f;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.5);
+    outline: 0;
+    font-family: 'SF';
+    font-size: 20px;
+    color: #ffffff;
+    border: 2px solid #01ff5f;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+label {
+    margin-left: 20PX;
+    background-color: #01ff5f;
+    font-family: 'SF';
+    font-size: 20px;
+    color: black;
+    border: 2px solid #01ff5f;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: 0.25s;
+}
+
+label:hover {
+    box-shadow: 0px 0px 30px #01ff5f50;
+    padding: 5px 25px;
+    transition: 0.25s;
+}
+
+#user {
+    position: absolute;
+    top: 80px
+}
+
+.form {
+    color: white;
+    font-family: 'SF Bold';
+    font-size: 20px;
+}
